@@ -1,0 +1,61 @@
+* {
+  box-shadow: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  background-color: rgb(40, 18, 82);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+.dropzone,
+.dragzone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.drop {
+  width: 100px;
+  height: 100px;
+  border: 2px dashed rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+i {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  margin: 10px;
+}
+span {
+  opacity: 0.7;
+}
+
+.draggable {
+  cursor: grab;
+  transition: opacity 0.3s ease-in;
+}
+
+.draggable:hover {
+  opacity: 0.5;
+}
