@@ -40,6 +40,22 @@ h1 {
   align-items: center;
   font-size: 2rem;
   margin: 10px;
+  transition: all 0.3s ease-in;
+}
+
+/* .drop.dropped {
+  background: grey;
+} */
+
+.drop.dropped i {
+  pointer-events: none;
+}
+.drop.dropped span {
+  font-size: 10px;
+  margin-top: 0.5rem;
+}
+.drop.dropped-hover {
+  transform: scale(1.1);
 }
 
 i {
@@ -49,6 +65,7 @@ i {
 }
 span {
   opacity: 0.7;
+  pointer-events: none;
 }
 
 .draggable {
@@ -58,4 +75,14 @@ span {
 
 .draggable:hover {
   opacity: 0.5;
+}
+
+.draggable.dragged {
+  user-select: none;
+  opacity: 0.2;
+  cursor: no-drop;
+}
+
+.draggable.dragged:hover {
+  opacity: 0.2;
 }
