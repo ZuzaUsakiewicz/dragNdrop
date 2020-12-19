@@ -22,10 +22,29 @@
     <h1>Drag N Drop</h1>
     <div class="container">
       <section class="dropzone">
-        <div class="drop" data-id="github"><span>GitHub</span></div>
+        <div class="drop" data-id="github">
+          <span>GitHub</span>
+        </div>
+        <div class="drop" data-id="mailchimp">
+          <span>Mailchimp</span>
+        </div>
+        <div class="drop" data-id="grunt">
+          <span>Grunt</span>
+        </div>
+        <div class="drop" data-id="grav">
+          <span>Grav</span>
+        </div>
       </section>
       <section class="dragzone">
         <i class="fab fa-github draggable" id="github" draggable="true"></i>
+        <i
+          class="fab fa-mailchimp draggable"
+          id="mailchimp"
+          draggable="true"
+        ></i>
+        <i class="fab fa-grunt draggable" id="grunt" draggable="true"></i>
+        <i class="fab fa-grav draggable" id="grav" draggable="true"></i>
+        <button id="restart">Restart</button>
       </section>
     </div>
   </body>

@@ -1,5 +1,15 @@
 const dropItems = document.querySelectorAll(".drop");
 const dragItems = document.querySelectorAll(".draggable");
+const button = document.getElementById("restart");
+
+const array = [];
+console.log(array);
+
+button.addEventListener("click", restart);
+
+function restart() {
+  location.reload();
+}
 
 dragItems.forEach((item) => {
   item.addEventListener("dragstart", dragStart);
@@ -40,6 +50,7 @@ function drop(event) {
   const dragItemData = event.dataTransfer.getData("text");
   const dropItemData = event.target.getAttribute("data-id");
   if (dragItemData === dropItemData) {
+    array.push(dragItemData);
     event.target.classList.add("dropped");
     const dragElement = document.getElementById(dragItemData);
     event.target.style.color = "green";
@@ -49,5 +60,12 @@ function drop(event) {
       "afterbegin",
       `<i class="fab fa-${dragItemData}" style="color: green"> </i>`
     );
+    endGame(array);
+  }
+}
+
+function endGame(array) {
+  if ((array.length = 4)) {
+    console.log("game over");
   }
 }
