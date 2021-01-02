@@ -4,8 +4,6 @@ const button = document.getElementById("restart");
 const modal = document.getElementById("game-over");
 
 const array = [];
-console.log(array);
-
 button.addEventListener("click", restart);
 
 function endGame() {
@@ -71,7 +69,7 @@ function drop(event) {
 }
 
 function checkArray(array) {
-  if (array.length >= 4) {
+  if (array.length >= 6) {
     endGame();
   }
 }
