@@ -21,6 +21,10 @@
   <body>
     <h1>Drag N Drop</h1>
     <div class="container">
+      <div id="game-over">
+        <h2>You win!</h2>
+        <button id="restart">Restart</button>
+      </div>
       <section class="dropzone">
         <div class="drop" data-id="github">
           <span>GitHub</span>
@@ -34,6 +38,12 @@
         <div class="drop" data-id="grav">
           <span>Grav</span>
         </div>
+        <div class="drop" data-id="codepen">
+          <span>codepen</span>
+        </div>
+        <div class="drop" data-id="evernote">
+          <span>evernote</span>
+        </div>
       </section>
       <section class="dragzone">
         <i class="fab fa-github draggable" id="github" draggable="true"></i>
@@ -44,7 +54,8 @@
         ></i>
         <i class="fab fa-grunt draggable" id="grunt" draggable="true"></i>
         <i class="fab fa-grav draggable" id="grav" draggable="true"></i>
-        <button id="restart">Restart</button>
+        <i class="fab fa-codepen draggable" id="codepen" draggable="true"></i>
+        <i class="fab fa-evernote draggable" id="evernote" draggable="true"></i>
       </section>
     </div>
   </body>

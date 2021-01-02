@@ -62,12 +62,16 @@ h2 {
 .dropzone,
 .dragzone {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px 0;
 }
-
+.dropzone {
+  justify-content: flex-start;
+}
+.dragzone {
+  justify-content: center;
+}
 .drop {
   width: 100px;
   height: 100px;
